@@ -1,19 +1,16 @@
 package br.edu.atitus;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
-
 import br.edu.atitus.interfaces.Corredor;
 import br.edu.atitus.interfaces.Nadador;
 import br.edu.atitus.interfaces.Voador;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         
         String hello = "  hello world   ";
-        String helloFormated = StringUtils.capitalize(StringUtils.trim(hello));
-        System.out.println(helloFormated);
+        
+      
 
 
         System.out.println(" ZOO ATITUS");

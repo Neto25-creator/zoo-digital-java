@@ -2,9 +2,8 @@ package br.edu.atitus;
 
 import br.edu.atitus.interfaces.Corredor;
 import br.edu.atitus.interfaces.Nadador;
-import br.edu.atitus.interfaces.Voador;
 import br.edu.atitus.interfaces.Predador;
-
+import br.edu.atitus.interfaces.Voador;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -142,14 +141,14 @@ public class ZooDigitalApp {
         System.out.println("4. Réptil (Cobra, Crocodilo, Lagarto, Pterodactylo)");
         
         int tipo = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine(); 
 
         System.out.print("Nome do animal: ");
         String nome = scanner.nextLine();
         
         System.out.print("Idade do animal: ");
         int idade = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine(); 
 
         Animal animal = switch (tipo) {
             case 1 -> criarMamifero(scanner, nome, idade);
